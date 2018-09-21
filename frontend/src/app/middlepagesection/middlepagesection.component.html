@@ -1,0 +1,10 @@
+<p @animatie-bara class="text-center text-middle-page-section">Un text este o succesiune
+  de caractere organizate conform unei limbi și care are drept scop transmiterea de informații.</p>
+
+<p @animatie-bara class="text-center paragraf">
+  <a class="btn text-light buton-din-centru btn-lg" (mouseenter)="hoverButtonDownloadCV()" (mouseleave)="unhoverButtonDownloadCV()"
+    [ngClass]="{ 'text-dark':isHoveredButtonDownloadCV }">My CV</a>
+
+  <a class="btn text-light buton-din-centru btn-lg" (mouseenter)="hoveredButtonWhatIKnow()" (mouseleave)="unhoveredButtonWhatIKnow()"
+    [ngClass]="{ 'text-dark':isHoveredButtonWhatIKnow }">WHAT I KNOW</a>
+</p>

@@ -1,0 +1,18 @@
+@mixin menuItemsStyle {
+    font-size: 18px;
+    &:hover{
+        color:white;
+    }
+}
+
+.btn{
+font-family: proxima-nova;
+}
+
+.divHovered{
+color:gray;
+}
+
+.menuItemClass{
+@include menuItemsStyle();
+}

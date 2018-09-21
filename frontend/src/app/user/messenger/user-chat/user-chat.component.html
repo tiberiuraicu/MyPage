@@ -1,0 +1,16 @@
+<div class="user-chat">
+ 
+  <input type="text" id="name" name="name" class="message-input" placeholder="Message" [(ngModel)]="message">
+  <button id="send" class="btn btn-default message-send-button" type="button" (click)="sendMessage()">Send</button>
+  <div class="receiver-name-div">{{nameToSendTo}}</div>
+<div class="middle-line"></div>
+  <div class="messages-container">
+    <one-message *ngFor="let greeting of messages" 
+      [emitterName]="greeting.emitterName" 
+      [message]="greeting.message"
+      [currentProfilePicture]="profilePicture(greeting.emitterName)">
+
+    </one-message>
+  </div>
+  
+</div>

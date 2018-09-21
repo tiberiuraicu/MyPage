@@ -1,0 +1,13 @@
+
+    <nav class=" d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 box-shadow nav-bar-custom "
+    (mouseenter)="hovered()"
+    (mouseleave)="unhovered()" >
+      <h5 @logoAnimation class="my-0 mr-md-auto h5stil" >𝓡𝓣</h5>
+      <h1 class="my-0 mr-md-auto" > Current User : {{currentUser}}</h1> 
+      <nav-bar-element *ngFor="let menuItem of menuItems" 
+      [link]="menuItem.link" 
+      [text]="menuItem.text" 
+      [isHovered]="isHovered" 
+      [hidden]="checkIsHidden(menuItem.text)"></nav-bar-element>
+      
+    </nav>

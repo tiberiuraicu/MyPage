@@ -1,0 +1,6 @@
+<a class="btn menuItemClass" 
+[ngClass]="{
+  'text-light' :!isHovered,
+  'divHovered' : isHovered
+}" 
+routerLink="{{link}}"  (click)="logout()">{{text}}</a>

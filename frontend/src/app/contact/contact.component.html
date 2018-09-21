@@ -1,0 +1,15 @@
+<form class="custom-form">
+  
+ <h5 class="titleLabel">Send me a message</h5>
+
+  <input type="email" class="custom-input" (focus)="isClicked('email')" (blur)="isClicked('email')"
+  [ngClass]="{'isClicked' : ! emailIsClicked}" type='text' placeholder="Email">
+
+  <input class="custom-input"  (focus)="isClicked('name')" (blur)="isClicked('name')"
+  [ngClass]="{'isClicked' : ! nameIsClicked}" type='text' placeholder="Name">
+
+  <input class="custom-input"   (focus)="isClicked('message')"  (blur)="isClicked('message')"
+  [ngClass]="{'isClicked' : ! messageIsClicked}" type='text' placeholder="Message">
+
+  <button type='button' class='custom-submit-button'>𝐒𝐮𝐛𝐦𝐢𝐭</button>
+</form>

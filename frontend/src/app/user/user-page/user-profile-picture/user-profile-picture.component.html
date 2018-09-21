@@ -1,0 +1,10 @@
+<div class="profile-picture">
+  <img class="user-profile-picture" [src]="'data:image/jpg;base64,'+ currentProfilePicture" />
+
+  <a class="change-profile-picture-button" (click)="visibilityOfChangeProfilePictureDiv()">Change Profile Picture</a>
+
+  <div [hidden]="changeProfilePicture" class="change-profile-picture-div">
+    <input type="file" (change)="onFileSelect($event)">
+    <button type="button" (click)="onUploadProfilePicture()" [disabled]="uploadButtonActivated">Upload</button>
+  </div>
+</div>

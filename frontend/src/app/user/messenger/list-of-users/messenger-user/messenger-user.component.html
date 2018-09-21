@@ -1,0 +1,14 @@
+<div class="messenger-user-container" (click)="setMessageReceiver(email)"
+(focus)="click1()"
+(blur)="unclick()"
+[ngClass]="{
+  'background-for-click' : isClicked
+}"
+>
+<img class="user-profile-picture" [src]="'data:image/jpg;base64,'+ currentProfilePicture"/>
+  <div class="email-container">
+    {{email}}
+  </div>
+
+  
+</div>

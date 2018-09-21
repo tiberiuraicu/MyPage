@@ -1,0 +1,27 @@
+<nav class="inner-menu ">
+
+    <a class="btn inner-first-menu-item" (click)="userPage()">
+      <img src="assets/resources/userDetailsIcon.png" class="message-icon">
+      <div>User Details</div></a>
+    <a class="btn inner-menu-item" (click)="messages()">
+      <img src="assets/resources/messageIcon.png" class="message-icon">
+      <div>Messages</div>
+    </a>
+    <a class="btn inner-menu-item"> 
+      <img src="assets/resources/otherUsersIcon.png" class="message-icon">
+      <div>Other Users</div>
+    </a>
+    <a class="btn inner-menu-item">
+      <img src="assets/resources/picturesIcon.png" class="message-icon">
+      <div>My Pictures</div>
+    </a>
+    <a class="btn inner-menu-item"> 
+      <img src="assets/resources/statisticsIcon.png" class="message-icon">
+      <div>Statistics</div>
+    </a>
+
+</nav>
+<div class="inner-div"></div>
+<div class="user-content ">
+<router-outlet></router-outlet>
+</div>

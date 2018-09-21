@@ -1,0 +1,56 @@
+
+.middle-line{
+    margin-top: 1%;
+    height: 1%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.user-chat{
+    float:right;
+    width:78%;
+    margin-right: 1%;
+    margin-top: 1%;
+    height: 95%;
+ }
+ .messages-container{
+     overflow: auto;
+     height: 90%;
+
+ }
+ ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 2px;
+
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f2; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.message-input{
+    outline:none;
+    width: 60%;
+    background-color: rgba(35, 163, 41, 0.0);
+    border-color: rgba(0, 0, 0, 0.0);
+    border-bottom-color: rgba(35, 163, 41, 0.3);
+}
+.message-send-button{
+    margin-left: 2%;
+}
+.receiver-name-div{
+    float: right;
+    margin-right: 20%;
+}
